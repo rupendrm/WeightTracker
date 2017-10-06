@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:minHeight="40dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/slidingmenu_IMG_options"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/slidingmenu_LBL_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu"
+                    android:paddingLeft="8dp"
+                    android:textColor="@color/blue_light"
+                    android:textSize="28dp" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/slidingmenu_IMG_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="onMenuOptionClick"
+                android:src="@drawable/menu" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/blue_light" />
+
+        <TextView
+            android:id="@+id/menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="Home"
+            android:paddingLeft="8dp"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/menu_update"
+            android:layout_width="match_parent"
+            android:paddingLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="Update"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/menu_Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="Settings"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/menu_history"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="History"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/menu_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="Report"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/menu_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:text="Logout"
+            android:textColor="@color/blue_light"
+            android:clickable="true"
+            android:onClick="onMenuOptionClick"
+            android:textSize="22dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/history_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/history_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/profile" />
+
+
+    <TextView
+        android:id="@+id/history_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/history_photo"
+        android:text=" Weight - 12"
+        android:textColor="@color/gray"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/history_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/history_weight"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/history_photo"
+        android:text="12/12/2016"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        android:typeface="sans" />
+
+    <ImageButton
+        android:id="@+id/history_delete"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/delete" />
+
+</RelativeLayout>

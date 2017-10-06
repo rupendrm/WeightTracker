@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:id="@+id/rel_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_light"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Username"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text|textNoSuggestions" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Password"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword|textNoSuggestions" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Age"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_age"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gender"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Gender"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Height"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_height"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Height (cms)"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Current Weight"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_currentweigh"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Current Weight (lbs)"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Goal Weight"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_goalweight"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Goal Weight (lbs)"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Target Date"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/blue_dark" />
+
+            <EditText
+                android:id="@+id/register_targetdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Target Date"
+                android:inputType="number"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp" />
+
+
+            <Button
+                android:id="@+id/register_register"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue_dark"
+                android:text="Register"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
